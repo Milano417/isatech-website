@@ -70,11 +70,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-white shrink-0" />
-                <span>Téléphone : <span className="text-slate-300 font-mono">[À COMPLÉTER]</span></span>
+                <span>Téléphone : <span className="text-slate-300 font-mono">+225 07 07 03 93 20/ 07 09 78 73 74</span></span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-white shrink-0" />
-                <span>Email : <span className="text-slate-300 font-mono">[À COMPLÉTER]</span></span>
+                <span>Email : <span className="text-slate-300 font-mono">info@isatech.ci</span></span>
               </div>
             </div>
           </div>
