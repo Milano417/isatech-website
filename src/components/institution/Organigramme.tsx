@@ -59,7 +59,7 @@ export const Organigramme: React.FC = () => {
               className="group relative bg-[#002060] text-white rounded-3xl p-6 sm:p-7 max-w-md w-full shadow-xl border-2 border-white/20 hover:scale-102 transition-all cursor-pointer text-center"
             >
               <div className="w-16 h-16 rounded-2xl overflow-hidden mx-auto border-2 border-white mb-3 shadow-md">
-                <img src={fondateur.image} alt={fondateur.name} className="w-full h-full object-cover" />
+                <img src="D:\MES PROJETS\SITE WEB\ISATECH\dist\assets\images (6).jpg" />
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-white text-[#002060] text-[10px] font-black uppercase tracking-wider mb-2">
                 <Crown className="w-3.5 h-3.5" />
@@ -93,7 +93,7 @@ export const Organigramme: React.FC = () => {
                 className="bg-white rounded-2xl p-5 border-2 border-[#002060]/20 hover:border-[#002060] shadow-sm hover:shadow-md transition-all cursor-pointer flex items-center gap-4 group"
               >
                 <div className="w-14 h-14 rounded-xl overflow-hidden border border-slate-200 shrink-0">
-                  <img src={dir.image} alt={dir.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                  <img src="D:\MES PROJETS\SITE WEB\ISATECH\dist\assets\1521381466313.jpg" />
                 </div>
                 <div>
                   <span className="text-[10px] font-black uppercase text-[#002060] tracking-wider block">
@@ -110,44 +110,12 @@ export const Organigramme: React.FC = () => {
           <div className="w-0.5 h-10 bg-[#002060]/40 mx-auto" />
         </div>
 
-        {/* NIVEAU 3: RESPONSABLES PÉDAGOGIQUES */}
+       
+        {/* NIVEAU 3: SECRÉTARIAT DE DIRECTION & ACCUEIL */}
         <div className="space-y-4">
           <div className="text-center">
             <span className="text-[10px] font-black uppercase tracking-widest text-[#002060] bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
-              Niveau 3 — Responsables Pédagogiques des Filières
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            {pedagogie.map((ped) => (
-              <div
-                key={ped.id}
-                onClick={() => setSelectedMember(ped)}
-                className="bg-white rounded-2xl p-5 border border-slate-200 hover:border-[#002060] shadow-xs hover:shadow-md transition-all cursor-pointer flex items-center gap-4 group"
-              >
-                <div className="w-14 h-14 rounded-xl overflow-hidden border border-slate-200 shrink-0">
-                  <img src={ped.image} alt={ped.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                </div>
-                <div>
-                  <span className="text-[10px] font-black uppercase text-[#002060] tracking-wider block">
-                    {ped.department}
-                  </span>
-                  <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#002060]">{ped.name}</h4>
-                  <p className="text-xs text-slate-500 font-medium">{ped.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Vertical connecting line */}
-          <div className="w-0.5 h-10 bg-[#002060]/40 mx-auto" />
-        </div>
-
-        {/* NIVEAU 4: SECRÉTARIAT DE DIRECTION & ACCUEIL */}
-        <div className="space-y-4">
-          <div className="text-center">
-            <span className="text-[10px] font-black uppercase tracking-widest text-[#002060] bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
-              Niveau 4 — Secrétariat & Accueil Administratif
+              Niveau 3 — Secrétariat & Accueil Administratif
             </span>
           </div>
 
@@ -176,11 +144,11 @@ export const Organigramme: React.FC = () => {
           <div className="w-0.5 h-10 bg-[#002060]/40 mx-auto" />
         </div>
 
-        {/* NIVEAU 5: CORPS PROFESSORAL / ENSEIGNANTS */}
+        {/* NIVEAU 4: CORPS PROFESSORAL / ENSEIGNANTS */}
         <div className="space-y-4">
           <div className="text-center">
             <span className="text-[10px] font-black uppercase tracking-widest text-[#002060] bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
-              Niveau 5 — Corps Professoral & Enseignants Référents
+              Niveau4 — Corps Professoral & Enseignants Référents
             </span>
           </div>
 

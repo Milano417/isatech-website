@@ -84,14 +84,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
                 </button>
 
-                <button
-                  onClick={() => onNavigate('/candidater')}
-                  className="px-6 py-3.5 rounded-xl text-sm font-black text-[#002060] bg-white border-2 border-[#002060] hover:bg-slate-50 shadow-xs flex items-center justify-center gap-2 transition-all active:scale-95"
-                >
-                  <FileText className="w-4 h-4 text-[#002060]" />
-                  <span>CANDIDATER</span>
-                </button>
-
+                
                 <button
                   onClick={() => onNavigate('/organigramme')}
                   className="px-4 py-3.5 rounded-xl text-xs font-bold text-slate-700 hover:text-[#002060] hover:bg-white border border-transparent hover:border-slate-200 flex items-center justify-center gap-1.5 transition-all"
@@ -123,7 +116,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#002060] bg-slate-900 aspect-4/3 sm:aspect-5/4">
                   <img
-                    src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+                    src="D:\MES PROJETS\SITE WEB\ISATECH\dist\assets\téléchargement (1).jpg"
                     alt="Étudiants de l'école ISATech à Abidjan Koumassi"
                     className="w-full h-full object-cover object-center hover:scale-104 transition-transform duration-700"
                   />
@@ -291,7 +284,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border-2 border-slate-200 shadow-md aspect-4/3">
               <img
-                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80"
+                src="D:\MES PROJETS\SITE WEB\ISATECH\dist\assets\Gemini_Generated_Image_4z0jn04z0jn04z0j.jpg"
                 alt="Locaux de l'école ISATech Koumassi"
                 className="w-full h-full object-cover"
               />
@@ -380,11 +373,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <p className="text-xs text-slate-500">Direction des Études & Secrétariat Général</p>
             </div>
             <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
-              <span className="text-[10px] font-black uppercase text-[#002060] block">Niveau 3</span>
-              <h4 className="text-sm font-black text-slate-900">Responsables Filières</h4>
-              <p className="text-xs text-slate-500">Pôles Technologique & Tertiaire</p>
-            </div>
-            <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
               <span className="text-[10px] font-black uppercase text-[#002060] block">Niveau 4 & 5</span>
               <h4 className="text-sm font-black text-slate-900">Secrétariat & Professeurs</h4>
               <p className="text-xs text-slate-500">Accueil des élèves & Corps Enseignant</p>
@@ -415,28 +403,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 Prêt à intégrer l'excellence ISATech ?
               </h3>
               <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
-                Rejoignez une communauté de plus de 2000 diplômés formés. Déposez votre candidature en ligne en 5 étapes. Un identifiant officiel <strong>ISA-2026-XXXXXX</strong> vous sera automatiquement attribué.
+                Rejoignez une communauté de plus de 2000 diplômés formés. Déposez votre dossier à l'administration<strong>ISATECH</strong>.
               </p>
             </div>
 
-            <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-end">
-              <button
-                onClick={() => onNavigate('/candidater')}
-                className="px-6 py-3.5 rounded-xl text-sm font-black text-[#002060] bg-white hover:bg-slate-100 transition-all flex items-center justify-center gap-2 shadow-lg"
-              >
-                <FileText className="w-4 h-4 text-[#002060]" />
-                <span>CANDIDATER MAINTENANT</span>
-              </button>
-
-              <button
-                onClick={() => onNavigate('/suivi-candidature')}
-                className="px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-white/10 hover:bg-white/20 border border-white/30 transition-all flex items-center justify-center gap-2"
-              >
-                <Clock className="w-4 h-4 text-white" />
-                <span>CONSULTER UN DOSSIER</span>
-              </button>
-            </div>
-
+            
           </div>
         </div>
       </section>
