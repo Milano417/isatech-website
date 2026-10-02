@@ -222,7 +222,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </div>
             )}
 
-           
+            <div className="pt-2 border-t border-white/20 space-y-1.5 text-xs">
+                         </div>
+          </div>
+
         </div>
 
         {/* Bottom Bar */}
