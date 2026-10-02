@@ -111,7 +111,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="lg:col-span-6 relative">
             <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#002060] bg-slate-900 aspect-4/3 sm:aspect-5/4">
               <img
-                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80"
+                src="/images/Gemini_Generated_Image_4z0jn04z0jn04z0j.jpg"
                 alt="Locaux de l'école ISATech Koumassi"
                 className="w-full h-full object-cover"
               />
