@@ -1,0 +1,7 @@
+{
+  "name": "ISATech - Institut des Sciences Appliquées et de la Technologie",
+  "description": "Plateforme officielle d'ISATech — Institut des Sciences Appliquées et de la Technologie à Abidjan, Koumassi : 8 filières, +2000 diplômés formés, admissions et vie étudiante.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
