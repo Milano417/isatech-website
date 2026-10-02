@@ -222,31 +222,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </div>
             )}
 
-            <div className="pt-2 border-t border-white/20 space-y-1.5 text-xs">
-              <button
-                onClick={() => handleLinkClick('/suivi-candidature')}
-                className="text-slate-200 hover:text-white flex items-center gap-1.5"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-white" />
-                Suivi de candidature en ligne
-              </button>
-              <button
-                onClick={() => handleLinkClick('/etudiant')}
-                className="text-slate-200 hover:text-white flex items-center gap-1.5"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-white" />
-                Portail Espace Étudiant
-              </button>
-              <button
-                onClick={() => handleLinkClick('/admin')}
-                className="text-slate-400 hover:text-white flex items-center gap-1.5"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-slate-500" />
-                Espace Administration
-              </button>
-            </div>
-          </div>
-
+           
         </div>
 
         {/* Bottom Bar */}
