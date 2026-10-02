@@ -110,46 +110,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </span>
               </button>
 
-              {/* Suivi Candidature Quick link */}
-              <button
-                onClick={() => handleLinkClick('/suivi-candidature')}
-                className="hidden md:flex items-center gap-1.5 text-xs font-bold text-slate-700 hover:text-[#002060] px-2.5 py-2 rounded-lg hover:bg-slate-50 transition-colors"
-                title="Suivre un dossier existant"
-              >
-                <Clock className="w-3.5 h-3.5 text-[#002060]" />
-                <span>Suivi dossier</span>
-              </button>
-
-              {/* Espace Étudiant */}
-              <button
-                onClick={() => handleLinkClick('/etudiant')}
-                className={`hidden sm:flex items-center gap-1.5 text-xs font-bold px-3 py-2 rounded-xl transition-all border ${
-                  currentRoute.startsWith('/etudiant')
-                    ? 'bg-[#002060] text-white border-[#002060]'
-                    : 'bg-white text-slate-700 border-slate-200 hover:border-[#002060] hover:text-[#002060]'
-                }`}
-              >
-                <GraduationCap className="w-4 h-4 text-[#002060]" />
-                <span>Espace Étudiant</span>
-              </button>
-
-              {/* Primary CTA CANDIDATER in Navy & White */}
-              <button
-                onClick={() => handleLinkClick('/candidater')}
-                className="flex items-center gap-1.5 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-extrabold text-white bg-[#002060] hover:bg-[#001744] active:scale-95 shadow-md shadow-[#002060]/20 transition-all border border-[#002060]"
-              >
-                <FileText className="w-4 h-4 shrink-0 text-white" />
-                <span>CANDIDATER</span>
-              </button>
-
-              {/* Mobile Menu Trigger */}
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="lg:hidden p-2 text-slate-800 hover:text-[#002060] hover:bg-slate-100 rounded-xl"
-                aria-label="Menu"
-              >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-              </button>
+                          
             </div>
           </div>
         </div>
