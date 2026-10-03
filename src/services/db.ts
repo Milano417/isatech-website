@@ -12,7 +12,7 @@ import {
 
 // Curated high quality photos representing African academic environment & modern tech in navy/white
 const FORMATION_IMAGES: Record<string, string> = {
-  IDA: 'D:\MES PROJETS\SITE WEB\ISATECH\public\images\images (1).jpg', // Coding / technology
+  IDA: '\images\images (1).jpg', // Coding / technology
   FCGE: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80', // Finance & analysis
   GEC: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80', // Commercial & presentation
   CV: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80', // Visual communication & design
