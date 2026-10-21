@@ -1,4 +1,6 @@
-# Site ISATech — HTML / CSS / JavaScript + espace admin
+# Site ISATech — 100 % HTML / CSS / JavaScript
+
+Aucun PHP, aucune base de données, aucun serveur à installer.
 
 ## Contenu du dossier
 
@@ -8,14 +10,78 @@
 | `assets/css/style.css`, `assets/js/site.js` | Style et script du site public |
 | `assets/images/` | Logo et photos d'origine |
 | `admin/` | Espace administration |
-| `api/index.php` | Petit serveur PHP qui lit et enregistre le contenu |
-| `data/*.json` | Le contenu du site : formations, actualités, galerie, infos, options, messages |
-| `uploads/` | Photos envoyées depuis l'admin |
-| `outils/` | Serveur de test local (Node.js), inutile en production — ne pas envoyer en ligne |
+| `data/*.json` | Le contenu du site : formations, actualités, galerie, infos, options |
+| `uploads/` | Photos ajoutées depuis l'admin |
+| `.nojekyll` | Indique à GitHub Pages de publier les fichiers tels quels |
 
-### Adresses des rubriques
+## Comment ça marche
 
-Toutes les rubriques sont dans `index.html`, on passe de l'une à l'autre avec la fin de l'adresse :
+```
+ Admin (navigateur) ──enregistre──▶ Dépôt GitHub (data/*.json, uploads/)
+                                          │
+                                          ▼ republication automatique (1-2 min)
+ Visiteurs ◀──────────── GitHub Pages (site public)
+```
+
+- Le site public lit son contenu dans `data/*.json`.
+- L'espace admin enregistre les modifications **directement dans le dépôt GitHub** `Milano417/isatech-website`, grâce à l'API GitHub (en JavaScript).
+- GitHub Pages republie le site tout seul : les changements sont visibles **1 à 2 minutes** après l'enregistrement.
+- Le formulaire de contact ouvre **WhatsApp** ou **l'email** du visiteur avec le message déjà rédigé. Les messages arrivent donc sur le WhatsApp et l'email indiqués dans « Options du site ».
+
+## Mise en ligne (une seule fois)
+
+### 1. Publier le site avec GitHub Pages
+
+1. Envoyez le code sur GitHub : `git push origin main`
+2. Sur GitHub, ouvrez le dépôt → **Settings** → **Pages**.
+3. **Source** : « Deploy from a branch » → Branche **main**, dossier **/ (root)** → **Save**.
+4. Après 1 à 2 minutes, le site est en ligne à l'adresse `https://milano417.github.io/isatech-website/`.
+5. (Facultatif) Nom de domaine personnalisé, ex. `www.isatech-ci.com` : même page, champ **Custom domain**, puis suivez les instructions DNS de GitHub.
+
+> ⚠️ Pour GitHub Pages gratuit, le dépôt doit être **public**. Le site étant public de toute façon, ça ne pose pas de problème : aucun mot de passe n'est stocké dans le code.
+
+### 2. Créer le jeton de l'administrateur
+
+L'admin se connecte avec un **jeton GitHub** (une sorte de mot de passe limité à ce seul dépôt).
+
+1. Connectez-vous à GitHub puis ouvrez https://github.com/settings/personal-access-tokens/new
+2. **Token name** : `Admin ISATech` — **Expiration** : 1 an (par exemple).
+3. **Repository access** : « Only select repositories » → `isatech-website`.
+4. **Permissions** → Repository permissions → **Contents : Read and write**.
+5. Cliquez sur **Generate token** et copiez le jeton (`github_pat_…`).
+6. Ouvrez `https://votre-site/admin/`, collez le jeton, cliquez sur **Se connecter**.
+
+Le jeton reste mémorisé dans ce navigateur. Pour un autre ordinateur, recollez-le (ou créez-en un autre).
+**Jeton perdu ou volé** : supprimez-le sur la même page GitHub, il ne fonctionne plus immédiatement.
+
+## Ce que l'admin peut faire
+
+- **Galerie photos** : ajouter plusieurs photos à la fois (elles sont réduites automatiquement), changer la légende et la catégorie, supprimer.
+- **Formations** : modifier tout le contenu d'une filière (texte, photo, objectifs, compétences, programme par semestre, débouchés, conditions), masquer, ajouter ou supprimer une filière.
+- **Actualités** : publier des articles avec photo, les garder en brouillon, les supprimer.
+- **Infos & communiqués** : messages courts (info, important, urgent). Une info peut s'afficher dans un **bandeau en haut du site**.
+- **Options du site** : nom, devise, téléphones, email, WhatsApp, horaires, adresse, texte et photo de l'accueil, ouverture ou fermeture des inscriptions, catégories.
+
+Chaque enregistrement crée une version dans GitHub : l'historique complet est visible sur la page **Commits** du dépôt, et toute erreur peut être annulée.
+
+## Redéployer après une modification du code
+
+Le **contenu** se modifie dans l'admin : rien à redéployer.
+
+Pour une modification du **code** (HTML, CSS, JS) :
+
+```
+git pull          # récupère d'abord ce que l'admin a enregistré en ligne
+git add -A
+git commit -m "Description de la modification"
+git push
+```
+
+GitHub Pages republie le site en 1 à 2 minutes. Rechargez avec **Ctrl + F5**.
+
+> ⚠️ Faites toujours `git pull` avant de modifier : l'admin enregistre dans le même dépôt, sinon `git push` sera refusé.
+
+## Adresses des rubriques
 
 | Rubrique | Adresse |
 |---|---|
@@ -30,74 +96,15 @@ Toutes les rubriques sont dans `index.html`, on passe de l'une à l'autre avec l
 | Contact | `/#/contact` |
 | Administration | `/admin/` |
 
-Les anciennes adresses (`formations.html`, `contact.html`…) sont redirigées automatiquement par le fichier `.htaccess`.
-
-## Choisir l'hébergement
-
-| Hébergement | Site public | Espace admin |
-|---|---|---|
-| **Avec PHP** (Hostinger, o2switch, LWS, PlanetHoster…) | ✅ | ✅ |
-| **Sans PHP** (GitHub Pages, Netlify, Vercel) | ✅ (lecture des fichiers `data/`) | ❌ rien ne peut être enregistré |
-
-➡️ Pour que l'administration puisse ajouter des photos, des actualités, etc., il faut un **hébergement avec PHP 7.4 ou plus récent**.
-
-## Première mise en ligne (hébergement PHP)
-
-1. Envoyez **tout le contenu de ce dossier**, sauf `outils/`, `README.md` et `.git`, à la racine du site (`public_html` ou `www`) par FTP (FileZilla) ou par le gestionnaire de fichiers de l'hébergeur.
-2. Vérifiez que les dossiers `data/` et `uploads/` sont **modifiables en écriture** par le serveur (droits 755, ou 775 si besoin).
-3. Allez sur `https://votre-site/admin/`. À la première visite, l'admin vous demande de **choisir le mot de passe administrateur**.
-
-> Sur Apache, les fichiers `.htaccess` fournis bloquent l'accès direct au dossier `data/` (messages et mot de passe) et empêchent l'exécution de scripts dans `uploads/`. Sur un serveur Nginx, ajoutez des règles équivalentes.
-
-## Redéployer après une modification du code
-
-Le **contenu** (photos, formations, actualités, infos, options) se modifie dans l'admin, directement en ligne : pas besoin de redéployer.
-
-Pour une modification du **code** (HTML, CSS, JS, PHP) :
-
-1. Envoyez sur le serveur uniquement les fichiers de code modifiés : `index.html`, `assets/`, `admin/`, `api/`, `.htaccess`.
-2. ⚠️ **N'écrasez jamais `data/` ni `uploads/` sur le serveur** : ils contiennent ce que l'admin a saisi en ligne (et le mot de passe). Les fichiers `data/` de ce dossier ne servent qu'à la toute première installation.
-3. Rechargez le site avec **Ctrl + F5** pour voir les changements.
-
-Si l'hébergeur est relié au dépôt GitHub (déploiement automatique), il suffit de pousser les modifications :
-
-```
-git push origin main
-```
-
-## Ce que l'admin peut faire
-
-- **Galerie photos** : ajouter plusieurs photos à la fois (elles sont réduites automatiquement), changer la légende et la catégorie, supprimer.
-- **Formations** : modifier tout le contenu d'une filière (texte, photo, objectifs, compétences, programme par semestre, débouchés, conditions), masquer, ajouter ou supprimer une filière.
-- **Actualités** : publier des articles avec photo, les garder en brouillon, les supprimer.
-- **Infos & communiqués** : messages courts (info, important, urgent). Une info peut s'afficher dans un **bandeau en haut du site**.
-- **Options du site** : nom, devise, téléphones, email, WhatsApp, horaires, adresse, texte et photo de l'accueil, ouverture ou fermeture des inscriptions, catégories.
-- **Messages** : messages du formulaire de contact, avec réponse par email ou WhatsApp.
-- **Sécurité** : changer le mot de passe.
-
-## Mot de passe oublié
-
-Supprimez le fichier `data/auth.json` sur le serveur, puis retournez sur `/admin/` : vous pourrez créer un nouveau mot de passe.
-
-## Sauvegarde
-
-Tout le contenu se trouve dans `data/` et `uploads/` **sur le serveur**. Téléchargez ces deux dossiers régulièrement pour avoir une sauvegarde.
-
 ## Tester sur votre ordinateur
 
-Avec Node.js installé, depuis ce dossier :
+Le site doit être ouvert via un petit serveur local (un double-clic sur `index.html` ne suffit pas, le navigateur bloque la lecture des fichiers `data/`) :
 
-```
-node outils/dev-server.cjs
-```
+- **VS Code** : extension « Live Server » → clic droit sur `index.html` → « Open with Live Server ».
+- **ou** en ligne de commande : `npx serve .`
 
-Puis ouvrez http://localhost:8080 (et http://localhost:8080/admin/).
-Le mot de passe local est stocké à part (`data/auth.dev.json`) et ne sert pas en ligne.
+Attention : l'admin ouvert en local enregistre quand même dans le vrai dépôt GitHub.
 
 ## Ancienne version (React)
 
-L'ancien site React a été retiré du dossier. Il reste disponible dans git, sur la branche `ancien-site-react` :
-
-```
-git checkout ancien-site-react
-```
+L'ancien site React reste disponible dans git, sur la branche `ancien-site-react`.

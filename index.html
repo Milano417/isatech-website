@@ -365,12 +365,13 @@
                 <div class="field"><label for="f-name">Nom complet *</label><input id="f-name" name="name" required autocomplete="name"></div>
                 <div class="field"><label for="f-phone">Téléphone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+225 07 00 00 00 00"></div>
               </div>
-              <div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
               <div class="field"><label for="f-subject">Objet</label><input id="f-subject" name="subject" placeholder="Ex : Inscription en IDA"></div>
               <div class="field"><label for="f-message">Message *</label><textarea id="f-message" name="message" required></textarea></div>
-              <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
               <div id="contact-status" aria-live="polite"></div>
-              <button class="btn btn-primary" type="submit">Envoyer le message</button>
+              <div class="cta-actions">
+                <button class="btn btn-whatsapp" type="submit" data-send="whatsapp">Envoyer par WhatsApp</button>
+                <button class="btn btn-primary" type="submit" data-send="email">Envoyer par email</button>
+              </div>
             </form>
           </div>
         </div>

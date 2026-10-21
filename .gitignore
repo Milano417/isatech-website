@@ -1,8 +1,3 @@
-# Mots de passe administrateur (jamais dans git)
-data/auth.json
-data/auth.dev.json
-
-# Photos envoyées depuis l'admin (elles vivent sur le serveur)
-uploads/*
-!uploads/.htaccess
-!uploads/.gitkeep
+# Fichiers locaux
+.DS_Store
+Thumbs.db

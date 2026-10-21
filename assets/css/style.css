@@ -134,6 +134,8 @@ p { margin: 0 0 1em; }
 .btn-gold:hover { background: #f0b232; }
 .btn-outline { border-color: var(--navy-800); color: var(--navy-800); background: transparent; }
 .btn-outline:hover { background: var(--navy-50); }
+.btn-whatsapp { background: #25d366; color: #fff; }
+.btn-whatsapp:hover { background: #1ebe5a; }
 .btn-ghost-light { border-color: rgba(255,255,255,.5); color: #fff; }
 .btn-ghost-light:hover { background: rgba(255,255,255,.1); }
 .btn-block { width: 100%; }
@@ -400,7 +402,6 @@ details.acc .acc-body ul { margin: 0; padding-left: 20px; }
 }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--navy-700); box-shadow: 0 0 0 4px var(--navy-100); }
 .field textarea { min-height: 140px; resize: vertical; }
-.hp { position: absolute; left: -9999px; }
 .alert { padding: 14px 16px; border-radius: 10px; font-weight: 600; font-size: .93rem; }
 .alert-ok { background: #e6f6ec; color: #1b6b3a; }
 .alert-err { background: #fde8eb; color: var(--red); }

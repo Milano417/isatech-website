@@ -1,7 +1,0 @@
-# Les données (dont les messages et le mot de passe) ne doivent jamais être servies directement.
-<IfModule mod_authz_core.c>
-    Require all denied
-</IfModule>
-<IfModule !mod_authz_core.c>
-    Deny from all
-</IfModule>

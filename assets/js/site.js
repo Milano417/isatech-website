@@ -2,13 +2,12 @@
    ISATech — script du site public
    Tout le site tient dans index.html : chaque rubrique est un
    bloc <div class="view" data-view="...">. Ce script charge les
-   données de l'API puis affiche la rubrique demandée dans l'adresse
+   fichiers data/*.json puis affiche la rubrique demandée dans l'adresse
    (#/formations, #/formation/ida, #/contact…).
    ========================================================= */
 (function () {
   'use strict';
 
-  const API = 'api/?action=';
   const MONTHS = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
 
   const NAV = [
@@ -514,28 +513,30 @@
         $('#c-phones').innerHTML = `<a href="${telHref(s.phones)}">${esc(s.phones)}</a>`;
         $('#c-email').innerHTML = `<a href="mailto:${esc(s.email)}">${esc(s.email)}</a>`;
         $('#c-hours').textContent = s.hours;
+        // Pas de serveur : le message est transmis par WhatsApp ou par l'application email du visiteur.
         const form = $('#contact-form');
         const status = $('#contact-status');
-        form.addEventListener('submit', async e => {
+        const whatsapp = String(s.whatsapp || '').replace(/\D/g, '');
+        if (!whatsapp) $('[data-send=whatsapp]', form).remove();
+        form.addEventListener('submit', e => {
           e.preventDefault();
-          const btn = $('button[type=submit]', form);
-          btn.disabled = true;
-          status.innerHTML = '';
-          try {
-            const res = await fetch(API + 'contact', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(Object.fromEntries(new FormData(form)))
-            });
-            const json = await res.json();
-            if (!res.ok) throw new Error(json.error || 'Erreur');
-            form.reset();
-            status.innerHTML = '<div class="alert alert-ok">Merci ! Votre message a bien été envoyé. Le secrétariat vous répondra rapidement.</div>';
-          } catch (err) {
-            status.innerHTML = `<div class="alert alert-err">${esc(err.message || 'Envoi impossible. Réessayez ou appelez-nous.')}</div>`;
-          } finally {
-            btn.disabled = false;
+          const f = Object.fromEntries(new FormData(form));
+          if (!f.name.trim() || !f.message.trim()) {
+            status.innerHTML = '<div class="alert alert-err">Merci d\'indiquer votre nom et votre message.</div>';
+            return;
           }
+          status.innerHTML = '';
+          const subject = f.subject.trim() || 'Demande de renseignements';
+          const body = [
+            `Bonjour ${s.shortName},`, '', f.message.trim(), '',
+            `${f.name.trim()}${f.phone.trim() ? ' — ' + f.phone.trim() : ''}`
+          ].join('\n');
+          if (e.submitter && e.submitter.dataset.send === 'whatsapp') {
+            window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(subject + '\n\n' + body)}`, '_blank', 'noopener');
+          } else {
+            location.href = `mailto:${s.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          }
+          status.innerHTML = '<div class="alert alert-ok">Votre message est prêt : il ne reste plus qu\'à l\'envoyer depuis WhatsApp ou votre messagerie.</div>';
         });
       },
       enter(d, route) {
@@ -579,14 +580,14 @@
 
   // ---------- Chargement des données ----------
   async function fetchJson(url) {
-    const res = await fetch(url);
+    // Paramètre horaire : évite d'afficher une ancienne version gardée en cache par le navigateur
+    const res = await fetch(url + '?v=' + Date.now());
     if (!res.ok) throw new Error(url + ' : HTTP ' + res.status);
     return res.json();
   }
 
-  // Hébergement sans PHP (GitHub Pages, Netlify…) : lecture directe des fichiers data/*.json,
-  // avec les mêmes filtres que l'API. Le site s'affiche, mais l'admin ne peut rien enregistrer.
-  async function loadStaticData() {
+  // Le contenu est dans data/*.json, modifié depuis l'espace admin.
+  async function loadData() {
     const names = ['settings', 'formations', 'news', 'infos', 'gallery'];
     const [settings, formations, news, infos, gallery] = await Promise.all(names.map(n => fetchJson(`data/${n}.json`)));
     const byDateDesc = (a, b) => String(b.date || '').localeCompare(String(a.date || ''));
@@ -602,12 +603,7 @@
   // ---------- Démarrage ----------
   async function init() {
     try {
-      try {
-        data = await fetchJson(API + 'public');
-      } catch (apiErr) {
-        console.warn('API indisponible, lecture des fichiers data/', apiErr);
-        data = await loadStaticData();
-      }
+      data = await loadData();
     } catch (err) {
       console.error(err);
       $$('.view').forEach(v => { v.hidden = v.dataset.view !== 'home'; });

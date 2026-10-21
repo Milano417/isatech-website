@@ -13,22 +13,30 @@
 </head>
 <body>
 
-  <!-- Connexion / première configuration -->
+  <!-- Connexion : le contenu est enregistré dans le dépôt GitHub du site -->
   <section class="auth" id="auth" hidden>
     <form class="auth-card" id="auth-form">
       <img src="../assets/images/logo.jpg" alt="ISATech" width="64" height="64">
-      <h1 id="auth-title">Espace administration</h1>
-      <p id="auth-help">Connectez-vous pour gérer le contenu du site.</p>
+      <h1>Espace administration</h1>
+      <p>Connectez-vous avec le jeton GitHub du site.</p>
       <label class="field">
-        <span>Mot de passe</span>
-        <input type="password" name="password" id="auth-password" required minlength="8" autocomplete="current-password">
+        <span>Jeton d'accès GitHub</span>
+        <input type="password" name="token" id="auth-token" required autocomplete="current-password" placeholder="github_pat_…">
       </label>
-      <label class="field" id="auth-confirm-wrap" hidden>
-        <span>Confirmer le mot de passe</span>
-        <input type="password" name="confirm" autocomplete="new-password">
-      </label>
+      <details class="auth-more">
+        <summary>Paramètres du dépôt</summary>
+        <label class="field">
+          <span>Dépôt GitHub</span>
+          <input name="repo" id="auth-repo" placeholder="utilisateur/depot" autocomplete="off">
+        </label>
+        <label class="field">
+          <span>Branche</span>
+          <input name="branch" id="auth-branch" placeholder="main" autocomplete="off">
+        </label>
+      </details>
       <div class="form-error" id="auth-error" role="alert"></div>
       <button class="btn btn-primary btn-block" type="submit" id="auth-submit">Se connecter</button>
+      <p class="auth-note">Le jeton reste enregistré dans ce navigateur uniquement. N'utilisez pas cet accès sur un ordinateur public.</p>
       <a class="back-link" href="../index.html">← Retour au site</a>
     </form>
   </section>
@@ -47,8 +55,7 @@
         <button type="button" data-tab="news">Actualités</button>
         <button type="button" data-tab="infos">Infos & communiqués</button>
         <button type="button" data-tab="settings">Options du site</button>
-        <button type="button" data-tab="messages">Messages <span class="count" id="unread-count" hidden></span></button>
-        <button type="button" data-tab="security">Sécurité</button>
+        <button type="button" data-tab="account">Connexion GitHub</button>
       </nav>
       <div class="sidebar-foot">
         <a class="btn btn-light btn-block" href="../index.html" target="_blank" rel="noopener">Voir le site ↗</a>
