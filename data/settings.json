@@ -1,0 +1,35 @@
+{
+  "schoolName": "Institut des Sciences Appliquées et de la Technologie",
+  "shortName": "ISATech",
+  "slogan": "L'excellence demeure notre credo",
+  "foundedDate": "06 septembre 2001",
+  "foundedYear": "2001",
+  "graduates": "2000+",
+  "address": "Abidjan — Koumassi, Côte d'Ivoire",
+  "postalBox": "10 BP 1591 Abidjan 10",
+  "phones": "+225 07 07 03 93 20 / 07 09 78 73 74",
+  "email": "info@isatech.ci",
+  "whatsapp": "2250707039320",
+  "hours": "Lundi au vendredi : 07h30 - 17h30",
+  "facebook": "",
+  "mapQuery": "ISATech Koumassi Abidjan",
+  "heroTitle": "Construisez les compétences qui façonnent votre avenir.",
+  "heroSubtitle": "Établissement d'enseignement supérieur à Abidjan-Koumassi, agréé par l'État. Formation rigoureuse, pratique et tournée vers l'emploi, préparant au BTS d'État.",
+  "heroImage": "assets/images/promo-tenue.jpg",
+  "admissionOpen": true,
+  "admissionYear": "2026-2027",
+  "galleryCategories": [
+    "Tenue officielle",
+    "Salles de cours",
+    "Locaux",
+    "Cérémonies",
+    "Activités"
+  ],
+  "newsCategories": [
+    "Actualités scolaires",
+    "Examens",
+    "Vie étudiante",
+    "Vie pédagogique",
+    "Événements"
+  ]
+}

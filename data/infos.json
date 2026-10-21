@@ -1,0 +1,20 @@
+[
+  {
+    "id": "i1",
+    "title": "Inscriptions ouvertes — Rentrée 2026-2027",
+    "text": "Le secrétariat reçoit les dossiers d'inscription du lundi au vendredi de 07h30 à 17h30.",
+    "type": "important",
+    "date": "2026-10-01",
+    "banner": true,
+    "active": true
+  },
+  {
+    "id": "i2",
+    "title": "Tenue réglementaire obligatoire",
+    "text": "Le port de la tenue officielle (costume / tailleur, chemise blanche, cravate ISATech) est obligatoire tous les jours de cours.",
+    "type": "info",
+    "date": "2026-09-20",
+    "banner": false,
+    "active": true
+  }
+]

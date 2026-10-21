@@ -1,8 +1,8 @@
-node_modules/
-build/
-dist/
-coverage/
-.DS_Store
-*.log
-.env*
-!.env.example
+# Mots de passe administrateur (jamais dans git)
+data/auth.json
+data/auth.dev.json
+
+# Photos envoyées depuis l'admin (elles vivent sur le serveur)
+uploads/*
+!uploads/.htaccess
+!uploads/.gitkeep

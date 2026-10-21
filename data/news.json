@@ -1,0 +1,46 @@
+[
+  {
+    "id": "n1",
+    "title": "Campagne d'Admission 2026-2027 : Rejoignez l'excellence à ISATech Koumassi",
+    "category": "Actualités scolaires",
+    "excerpt": "Les inscriptions et dépôts de dossiers de candidature pour la rentrée académique 2026 sont officiellement ouverts sur notre plateforme.",
+    "content": "L'Institut des Sciences Appliquées et de la Technologie (ISATech) a le plaisir d'informer les bacheliers, étudiants et professionnels de l'ouverture officielle de la campagne de recrutement pour l'année académique 2026-2027.\n\nDepuis sa création le 06 septembre 2001, ISATech cultive l'excellence pédagogique avec plus de 2000 diplômés formés et une devise immuable : « L’excellence demeure notre credo ».\n\nLes candidats peuvent dès à présent déposer leur candidature en ligne pour les huit filières d'excellence :\n- IDA (Informatique — Développement d’Applications)\n- FCGE (Finance, Comptabilité et Gestion)\n- GEC (Gestion Commerciale)\n- CV (Communication Visuelle)\n- TH (Tourisme et Hôtellerie)\n- RHCOM (Ressources Humaines et Communication)\n- AD (Assistanat de Direction)\n- RIT (Réseau Informatique et Télécommunications)\n\nUn accompagnement personnalisé est proposé à chaque candidat dès la soumission de son dossier avec l'attribution d'un numéro officiel de suivi.",
+    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    "date": "2026-09-15",
+    "author": "Direction Pédagogique ISATech",
+    "published": true
+  },
+  {
+    "id": "n2",
+    "title": "Immersion professionnelle : Les étudiants d'IDA et RIT brillent lors des ateliers pratiques",
+    "category": "Vie pédagogique",
+    "excerpt": "Les travaux pratiques en laboratoire informatique et réseaux permettent aux étudiants d'acquérir des réflexes opérationnels immédiatement valorisables.",
+    "content": "À ISATech, la théorie trouve son prolongement naturel dans la mise en pratique immédiate. Nos étudiants des promotions Informatique (IDA) et Réseaux (RIT) ont mené cette semaine des sessions intensives de simulation de projets réels.\n\nAu programme :\n- Déploiement d'une architecture réseau sécurisée avec segmentation VLAN et pare-feu\n- Conception et prototypage d'une application de gestion pour PME en équipe Scrum\n- Tests de vulnérabilités et initiation aux standards de cybersécurité\n\nCette pédagogie par projet garantit une insertion professionnelle rapide de nos futurs diplômés sur le marché de l'emploi en Côte d'Ivoire et dans la sous-région.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
+    "date": "2026-09-22",
+    "author": "Cellule Informatique & Innovation",
+    "published": true
+  },
+  {
+    "id": "n3",
+    "title": "Journées Portes Ouvertes : Venez découvrir l'école à Abidjan-Koumassi",
+    "category": "Événements",
+    "excerpt": "Rencontrez l'équipe pédagogique, échangez avec les étudiants actuels et visitez les salles spécialisées lors de nos prochaines journées portes ouvertes.",
+    "content": "Vous hésitez encore sur le choix de votre filière post-bac ? ISATech ouvre les portes de son établissement situé à Abidjan, Koumassi.\n\nAu cours de cet événement :\n- Présentation détaillée des 8 parcours de formation\n- Visite guidée des salles d'informatique, de communication visuelle et de comptabilité\n- Rencontres individuelles avec les enseignants et responsables de filières\n- Ateliers d'orientation personnalisée et simulateur de candidature\n\nL'accès est libre et gratuit pour tous les bacheliers et leurs parents.",
+    "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80",
+    "date": "2026-09-28",
+    "author": "Secrétariat Général ISATech",
+    "published": true
+  },
+  {
+    "id": "n4",
+    "title": "Vie scolaire : Constitution du nouveau Bureau des Étudiants (BDE)",
+    "category": "Vie étudiante",
+    "excerpt": "Dynamisme, entraide et cohésion : le nouveau bureau des étudiants prend ses fonctions avec un riche programme culturel, sportif et technologique.",
+    "content": "La vie à l'école ISATech ne se résume pas aux cours magistraux et aux séances en laboratoire. Le nouveau Bureau des Étudiants vient d'être élu pour porter la voix des étudiants et organiser les activités extrascolaires.\n\nAu calendrier de cette année :\n- Tournoi inter-filières de football et basketball\n- Hackathon annuel ISATech Code Challenge\n- Journée d'intégration et gala de remise des diplômes\n- Séances de mentorat entre promotions aînées et nouveaux arrivants",
+    "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+    "date": "2026-09-30",
+    "author": "BDE ISATech",
+    "published": true
+  }
+]

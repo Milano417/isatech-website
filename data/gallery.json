@@ -1,0 +1,66 @@
+[
+  {
+    "id": "g1",
+    "url": "assets/images/promo-tenue.jpg",
+    "title": "Promotion en tenue officielle",
+    "category": "Tenue officielle",
+    "description": "Étudiants en costume et cravate aux couleurs d'ISATech, devant le logo de l'école.",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "g2",
+    "url": "assets/images/classe-1.jpg",
+    "title": "Séance de travail en salle de cours",
+    "category": "Salles de cours",
+    "description": "Étudiantes et étudiants en tenue réglementaire pendant un cours.",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "g3",
+    "url": "assets/images/classe-2.jpg",
+    "title": "Cours avec l'enseignant",
+    "category": "Salles de cours",
+    "description": "Encadrement de proximité en salle de classe.",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "g4",
+    "url": "assets/images/classe-3.jpg",
+    "title": "Étudiants en classe",
+    "category": "Salles de cours",
+    "description": "Concentration et rigueur pendant les évaluations.",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "g5",
+    "url": "assets/images/batiment-entree.webp",
+    "title": "Entrée de l'établissement",
+    "category": "Locaux",
+    "description": "Le bâtiment d'ISATech à Abidjan-Koumassi.",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "g6",
+    "url": "assets/images/batiment-couloirs.webp",
+    "title": "Les étages de l'école",
+    "category": "Locaux",
+    "description": "Coursives et salles de classe.",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "g7",
+    "url": "assets/images/banniere-ecole.webp",
+    "title": "La bannière ISATech",
+    "category": "Locaux",
+    "description": "Établissement agréé par l'État, habilité par le FDFP.",
+    "date": "2026-10-01"
+  },
+  {
+    "id": "g8",
+    "url": "assets/images/vue.jpg",
+    "title": "Vue de l'école",
+    "category": "Locaux",
+    "description": "ISATech, Koumassi.",
+    "date": "2026-10-01"
+  }
+]

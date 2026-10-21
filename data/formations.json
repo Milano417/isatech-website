@@ -1,0 +1,697 @@
+[
+  {
+    "id": "ida",
+    "code": "IDA",
+    "name": "Informatique — Développement d’Applications",
+    "category": "Informatique & Technologies",
+    "shortDescription": "Concevez et développez les solutions logicielles, applications web et mobiles de demain.",
+    "description": "La formation IDA prépare les étudiants aux principes de conception, de développement et de maintenance d'applications informatiques. Elle permet de développer des compétences solides en programmation, algorithmique avancée, bases de données relationnelles, développement web moderne et ingénierie logicielle.",
+    "level": "BAC+2 (BTS d'État) / Préparation Licence Pro",
+    "duration": "2 ans (4 semestres)",
+    "image": "assets/images/formation-ida.jpg",
+    "objectives": [
+      "Maîtriser les paradigmes fondamentaux de la programmation orientée objet et fonctionnelle",
+      "Concevoir des bases de données relationnelles optimisées (SQL, modélisation Merise)",
+      "Développer des applications web et logicielles fiables, sécurisées et évolutives",
+      "Appliquer les méthodes agiles et les bonnes pratiques de génie logiciel"
+    ],
+    "skills": [
+      "Algorithmique avancée",
+      "Programmation (Java, Python, C#)",
+      "Développement Web (HTML5, CSS3, JavaScript, PHP)",
+      "Bases de données & SQL",
+      "Conception logicielle & UML",
+      "Développement d'applications",
+      "Maintenance & Debugging",
+      "Gestion de projets informatiques"
+    ],
+    "program": [
+      {
+        "semester": "Semestre 1 — Fondamentaux du Développement",
+        "modules": [
+          "Algorithmique & Structures de données",
+          "Langage C / Python pour débutants",
+          "Technologies Web : HTML, CSS & ergonomie UI",
+          "Architecture matérielle et systèmes d'exploitation",
+          "Mathématiques appliquées à l'informatique",
+          "Anglais technique & Communication professionnelle"
+        ]
+      },
+      {
+        "semester": "Semestre 2 — Programmation Orientée Objet & Données",
+        "modules": [
+          "Programmation Orientée Objet (Java)",
+          "Modélisation des données (Merise, MCD/MLD)",
+          "Bases de données relationnelles & Langage SQL",
+          "Développement web dynamique (PHP / MySQL)",
+          "Droit informatique & Éthique du numérique",
+          "Projet tutoré d'application web"
+        ]
+      },
+      {
+        "semester": "Semestre 3 — Génie Logiciel & Architectures Web",
+        "modules": [
+          "Frameworks Web modernes (Laravel / React basics)",
+          "Conception et tests logiciels (UML, JUnit)",
+          "Administration de bases de données et sécurité applicative",
+          "Développement d'applications desktop / mobiles",
+          "Méthodologies Agiles & Gestion de projet Scrum",
+          "Anglais professionnel & Préparation d'entretiens"
+        ]
+      },
+      {
+        "semester": "Semestre 4 — Professionnalisation & Stage en Entreprise",
+        "modules": [
+          "Projet de fin de cycle (Conception et développement complet)",
+          "Sécurité applicative et bonnes pratiques OWASP",
+          "Déploiement et intégration continue",
+          "Stage pratique en entreprise (8 à 12 semaines)",
+          "Rédaction et soutenance du rapport de stage devant jury"
+        ]
+      }
+    ],
+    "opportunities": [
+      "Développeur web front-end & back-end",
+      "Développeur d'applications mobiles et desktop",
+      "Programmeur analyste junior",
+      "Analyste-programmeur",
+      "Technicien supérieur informatique",
+      "Assistant chef de projet digital"
+    ],
+    "admissionRequirements": [
+      "Être titulaire d'un Baccalauréat scientifique ou technique (Séries C, D, E, F) ou Baccalauréat général équivalent",
+      "Étude du dossier scolaire (bulletins de Première et Terminale)",
+      "Entretien de motivation et test de logique informatique"
+    ],
+    "published": true,
+    "order": 1
+  },
+  {
+    "id": "fcge",
+    "code": "FCGE",
+    "name": "Finance, Comptabilité et Gestion",
+    "category": "Finance & Gestion",
+    "shortDescription": "Maîtrisez les opérations financières, le contrôle de gestion et la fiscalité d'entreprise.",
+    "description": "La filière FCGE développe les compétences nécessaires à la compréhension et à la gestion globale des opérations comptables, financières, fiscales et administratives d'une entreprise ou institution publique.",
+    "level": "BAC+2 (BTS d'État) / Préparation Licence Pro",
+    "duration": "2 ans (4 semestres)",
+    "image": "assets/images/formation-fcge.jpg",
+    "objectives": [
+      "Tenir la comptabilité générale et analytique selon le système comptable SYSCOHADA révisé",
+      "Établir les déclarations fiscales et sociales dans le respect de la législation ivoirienne",
+      "Participer à l'élaboration des budgets et aux travaux de contrôle de gestion",
+      "Analyser la santé financière d'une entreprise par des ratios et tableaux de bord"
+    ],
+    "skills": [
+      "Comptabilité générale (SYSCOHADA)",
+      "Finance d'entreprise",
+      "Gestion de trésorerie",
+      "Fiscalité des entreprises",
+      "Analyse financière",
+      "Gestion budgétaire",
+      "Contrôle de gestion",
+      "Tableaux de bord financiers",
+      "Logiciels comptables (Sage Saari) & Excel avancé"
+    ],
+    "program": [
+      {
+        "semester": "Semestre 1 — Fondements Comptables & Cadre Juridique",
+        "modules": [
+          "Comptabilité générale I : Écritures et opérations courantes",
+          "Mathématiques financières",
+          "Économie générale et organisation des entreprises",
+          "Droit civil et commercial ivoirien",
+          "Bureautique appliquée (Excel niveau 1)",
+          "Communication professionnelle écrite et orale"
+        ]
+      },
+      {
+        "semester": "Semestre 2 — Travaux d'Inventaire & Fiscalité",
+        "modules": [
+          "Comptabilité générale II : Travaux d'inventaire et clôture",
+          "Fiscalité I : TVA, impôts directs et taxes sur salaires",
+          "Comptabilité analytique d'exploitation",
+          "Logiciels de gestion comptable (Sage Compta)",
+          "Statistiques appliquées à la gestion",
+          "Anglais des affaires"
+        ]
+      },
+      {
+        "semester": "Semestre 3 — Analyse Financière & Gestion Prévisionnelle",
+        "modules": [
+          "Analyse financière et diagnostic économique",
+          "Gestion budgétaire et contrôle de gestion",
+          "Fiscalité II : Impôt sur les sociétés et contentieux",
+          "Gestion de la trésorerie et relations bancaires",
+          "Comptabilité des sociétés et opérations spécifiques",
+          "Projet professionnel de gestion"
+        ]
+      },
+      {
+        "semester": "Semestre 4 — Clôture et Stage d'Immersion",
+        "modules": [
+          "Audit comptable et financier élémentaire",
+          "Synthèse financière et tableaux de bord décisionnels",
+          "Stage obligatoire en cabinet d'expertise ou entreprise",
+          "Rédaction et soutenance du mémoire de BTS"
+        ]
+      }
+    ],
+    "opportunities": [
+      "Assistant comptable en cabinet ou entreprise",
+      "Comptable d'entreprise junior",
+      "Assistant financier et trésorerie",
+      "Gestionnaire administratif et financier",
+      "Contrôleur de gestion junior",
+      "Auditeur comptable junior"
+    ],
+    "admissionRequirements": [
+      "Baccalauréat séries G2, B, D, C ou équivalent homologué",
+      "Examen du dossier scolaire",
+      "Entretien d'orientation professionnelle"
+    ],
+    "published": true,
+    "order": 2
+  },
+  {
+    "id": "gec",
+    "code": "GEC",
+    "name": "Gestion Commerciale",
+    "category": "Commerce & Management",
+    "shortDescription": "Développez l’art de la négociation, de la vente stratégique et de la fidélisation client.",
+    "description": "La filière GEC forme les futurs cadres commerciaux aux techniques de vente, de prospection, de négociation commerciale complexe, de marketing opérationnel et de pilotage d'équipes commerciales dans un environnement économique dynamique.",
+    "level": "BAC+2 (BTS d'État) / Préparation Licence Pro",
+    "duration": "2 ans (4 semestres)",
+    "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80",
+    "objectives": [
+      "Bâtir et mettre en œuvre une stratégie de prospection et de vente efficace",
+      "Négocier des contrats commerciaux avec des clients B2B et B2C",
+      "Utiliser les outils du marketing digital et de la relation client (CRM)",
+      "Organiser des campagnes de promotion et animer des points de vente"
+    ],
+    "skills": [
+      "Techniques de vente",
+      "Prospection multicanale",
+      "Négociation commerciale",
+      "Marketing opérationnel & mix",
+      "Gestion de la Relation Client (CRM)",
+      "Communication commerciale",
+      "Management commercial",
+      "Stratégie de distribution",
+      "Marketing digital & e-commerce"
+    ],
+    "program": [
+      {
+        "semester": "Semestre 1 — Techniques de Vente & Économie",
+        "modules": [
+          "Techniques de négociation commerciale",
+          "Fondements du marketing",
+          "Économie d'entreprise et droit commercial",
+          "Comportement du consommateur",
+          "Outils bureautiques et bases de données clients",
+          "Techniques d'expression et aisance orale"
+        ]
+      },
+      {
+        "semester": "Semestre 2 — Marketing Opérationnel & Distribution",
+        "modules": [
+          "Prospection et conduite d'entretiens de vente",
+          "Merchandising et gestion de linéaire",
+          "Gestion commerciale informatisée (logiciels de vente)",
+          "Droit de la consommation et de la concurrence",
+          "Statistiques appliquées aux études de marché",
+          "Anglais commercial"
+        ]
+      },
+      {
+        "semester": "Semestre 3 — Stratégie Commerciale & Digital",
+        "modules": [
+          "Stratégie commerciale et politique tarifaire",
+          "Marketing digital et réseaux sociaux professionnels",
+          "Management de la force de vente",
+          "Commerce international et logistique de distribution",
+          "Gestion de portefeuille clients grands comptes",
+          "Projet commercial appliqué"
+        ]
+      },
+      {
+        "semester": "Semestre 4 — Professionnalisation Commerciale",
+        "modules": [
+          "Audit commercial et performance des ventes",
+          "Stage professionnel en entreprise (8 à 10 semaines)",
+          "Élaboration du plan d'action commerciale (PAC)",
+          "Soutenance du rapport de stage"
+        ]
+      }
+    ],
+    "opportunities": [
+      "Commercial / Attaché commercial terrain",
+      "Assistant commercial et administration des ventes",
+      "Chargé de clientèle particuliers / entreprises",
+      "Conseiller commercial sédentaire",
+      "Assistant chef de produit marketing",
+      "Business Developer junior"
+    ],
+    "admissionRequirements": [
+      "Baccalauréat toutes séries (A, B, C, D, G1, G2)",
+      "Aisance relationnelle et aptitude pour la communication",
+      "Dossier scolaire et entretien"
+    ],
+    "published": true,
+    "order": 3
+  },
+  {
+    "id": "cv",
+    "code": "CV",
+    "name": "Communication Visuelle",
+    "category": "Communication & Design",
+    "shortDescription": "Donnez vie aux identités de marque, interfaces et créations graphiques modernes.",
+    "description": "La filière CV développe les compétences artistiques et techniques indispensables à la conception d'identités de marques percutantes, d'éditions imprimées, de supports publicitaires et de créations digitales innovantes.",
+    "level": "BAC+2 (BTS d'État) / Préparation Licence Pro",
+    "duration": "2 ans (4 semestres)",
+    "image": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80",
+    "objectives": [
+      "Maîtriser les logiciels de référence du design graphique (Photoshop, Illustrator, InDesign)",
+      "Concevoir des identités visuelles complètes (logos, chartes graphiques, typographies)",
+      "Réaliser des supports imprimés (packaging, affiches, brochures) et numériques (web, social media)",
+      "Développer une culture visuelle, sémiologique et esthétique contemporaine"
+    ],
+    "skills": [
+      "Design graphique & Ergonomie visuelle",
+      "Communication visuelle & Sémiologie",
+      "Branding & Stratégie de marque",
+      "Identité visuelle & Charte graphique",
+      "Typographie & Mise en page éditoriale",
+      "Illustration vectorielle",
+      "Création publicitaire multisupport",
+      "Retouche photo & Traitement numérique",
+      "Production numérique et pré-presse"
+    ],
+    "program": [
+      {
+        "semester": "Semestre 1 — Arts Appliqués & Outils Graphiques",
+        "modules": [
+          "Dessin d'observation et croquis préparatoire",
+          "Théorie des couleurs et sémiologie de l'image",
+          "Initiation PAO : Adobe Illustrator & vectoriel",
+          "Histoire de l'art et du graphisme",
+          "Typographie fondamentale",
+          "Expression écrite et communication visuelle"
+        ]
+      },
+      {
+        "semester": "Semestre 2 — Retouche & Édition",
+        "modules": [
+          "Adobe Photoshop : retouche d'images & photomontage",
+          "Adobe InDesign : mise en page éditoriale et presse",
+          "Conception de logotypes et univers de marques",
+          "Chaîne graphique et contraintes d'impression pré-presse",
+          "Photographie de studio et éclairage",
+          "Anglais appliqué au design"
+        ]
+      },
+      {
+        "semester": "Semestre 3 — Design Digital & Campagnes Publicitaires",
+        "modules": [
+          "Design d'interfaces web et mobiles (UI/UX design basique)",
+          "Campagnes de communication 360° et affichage urbain",
+          "Design packaging et modélisation de volumes",
+          "Motion design d'initiation (After Effects)",
+          "Droit de la propriété intellectuelle et droits d'auteur",
+          "Direction artistique et constitution du portfolio"
+        ]
+      },
+      {
+        "semester": "Semestre 4 — Stage & Projet Créatif Majeur",
+        "modules": [
+          "Projet global d'identité visuelle et soutenance de book",
+          "Stage professionnel en agence de communication ou imprimerie",
+          "Pitch client et présentation d'intentions créatives",
+          "Soutenance de diplôme devant un jury professionnel"
+        ]
+      }
+    ],
+    "opportunities": [
+      "Graphiste / Designer graphique",
+      "Infographiste d'édition et pré-presse",
+      "Créateur de contenu visuel (Content Creator)",
+      "Assistant directeur artistique en agence",
+      "Designer de communication de marque",
+      "Designer packaging et supports imprimés"
+    ],
+    "admissionRequirements": [
+      "Baccalauréat toutes séries (A, B, C, D, E, F) ou équivalent",
+      "Intérêt prononcé pour les arts graphiques, le dessin et le digital",
+      "Présentation facultative d'un carnet de croquis ou travaux personnels"
+    ],
+    "published": true,
+    "order": 4
+  },
+  {
+    "id": "th",
+    "code": "TH",
+    "name": "Tourisme et Hôtellerie",
+    "category": "Tourisme & Hôtellerie",
+    "shortDescription": "Excellence de l’accueil, gestion hôtelière haut de gamme et valorisation touristique.",
+    "description": "La filière TH prépare les futurs professionnels aux exigences de l'accueil de prestige, de l'hébergement, de la gestion opérationnelle d'établissements hôteliers et de l'animation d'activités touristiques nationales et internationales.",
+    "level": "BAC+2 (BTS d'État) / Préparation Licence Pro",
+    "duration": "2 ans (4 semestres)",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "objectives": [
+      "Gérer avec rigueur les services d'accueil et de réception hôtelière",
+      "Maîtriser les logiciels de réservation (PMS) et de tarification hôtelière",
+      "Organiser des événements, séminaires et circuits touristiques",
+      "Appliquer les normes internationales de qualité et d'hygiène"
+    ],
+    "skills": [
+      "Accueil et réception de prestige",
+      "Gestion hôtelière et hébergement",
+      "Économie et géographie touristique",
+      "Relation client multiculturelle",
+      "Gestion des réservations & logiciels PMS",
+      "Techniques de restauration et banqueting",
+      "Événementiel hôtelier et séminaires",
+      "Communication professionnelle bilingue"
+    ],
+    "program": [
+      {
+        "semester": "Semestre 1 — Fondamentaux de l'Hôtellerie",
+        "modules": [
+          "Techniques d'accueil et posture professionnelle",
+          "Géographie touristique de la Côte d'Ivoire et de l'Afrique",
+          "Gestion des opérations de front office (réception)",
+          "Économie générale et sociologie des loisirs",
+          "Bureautique appliquée au secteur hôtelier",
+          "Anglais hôtelier intensif"
+        ]
+      },
+      {
+        "semester": "Semestre 2 — Hébergement & Restauration",
+        "modules": [
+          "Gestion des étages et gouvernance hôtelière",
+          "Organisation et gestion de la restauration (Food & Beverage)",
+          "Logiciels de réservation hôtelière spécialisés (Opera/Fidelio)",
+          "Hygiène, sécurité et normes HACCP",
+          "Droit du tourisme et de l'hôtellerie",
+          "Deuxième langue vivante étrangère"
+        ]
+      },
+      {
+        "semester": "Semestre 3 — Management & Événementiel",
+        "modules": [
+          "Yield Management et tarification hôtelière",
+          "Organisation de conférences, salons et banquets",
+          "Conception et commercialisation de produits touristiques",
+          "Comptabilité et gestion financière hôtelière",
+          "Marketing hôtelier et promotion en ligne",
+          "Projet événementiel tutoré"
+        ]
+      },
+      {
+        "semester": "Semestre 4 — Stage Professionnel de Fin de Cycle",
+        "modules": [
+          "Management des équipes de service hôtelier",
+          "Stage pratique dans un grand complexe hôtelier ou agence de voyage",
+          "Rédaction du mémoire de stage professionnel",
+          "Soutenance devant les professionnels du secteur"
+        ]
+      }
+    ],
+    "opportunities": [
+      "Réceptionniste en hôtel de standing",
+      "Agent de réservation et billetterie",
+      "Assistant de direction hôtelière",
+      "Agent d'escale et guide touristique",
+      "Chargé d'accueil et de relations publiques",
+      "Assistant coordinateur événementiel"
+    ],
+    "admissionRequirements": [
+      "Baccalauréat toutes séries (A, B, C, D, G2 ou équivalent)",
+      "Excellente présentation et aisance relationnelle",
+      "Maîtrise du français et bonnes notions d'anglais"
+    ],
+    "published": true,
+    "order": 5
+  },
+  {
+    "id": "rhcom",
+    "code": "RHCOM",
+    "name": "Ressources Humaines et Communication",
+    "category": "Ressources Humaines & Communication",
+    "shortDescription": "Développez les talents, animez la communication interne et gérez le capital humain.",
+    "description": "La filière RHCOM forme les futurs spécialistes de la gestion du capital humain, du recrutement, de l'administration du personnel, des relations sociales et de la communication interne et externe des organisations.",
+    "level": "BAC+2 (BTS d'État) / Préparation Licence Pro",
+    "duration": "2 ans (4 semestres)",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80",
+    "objectives": [
+      "Administrer la gestion quotidienne du personnel et des contrats de travail",
+      "Participer aux campagnes de recrutement et à l'intégration des collaborateurs",
+      "Concevoir et animer des plans de communication interne et externe",
+      "Appliquer le droit social et la législation du travail en vigueur"
+    ],
+    "skills": [
+      "Gestion administrative du personnel",
+      "Techniques de recrutement & entretiens",
+      "Droit du travail & relations sociales",
+      "Communication interne & culture d'entreprise",
+      "Communication institutionnelle & RP",
+      "Gestion prévisionnelle des emplois et compétences (GPEC)",
+      "Élaboration du plan de formation",
+      "Paie et déclarations sociales",
+      "Communication digitale d'entreprise"
+    ],
+    "program": [
+      {
+        "semester": "Semestre 1 — Cadre Juridique & Bases de la Communication",
+        "modules": [
+          "Droit du travail : contrats, congés et obligations",
+          "Psychologie des organisations et relations humaines",
+          "Fondements de la communication des entreprises",
+          "Gestion administrative et archivage RH",
+          "Techniques d'expression écrite et synthèse",
+          "Anglais professionnel appliqué aux RH"
+        ]
+      },
+      {
+        "semester": "Semestre 2 — Administration du Personnel & Paie",
+        "modules": [
+          "Gestion de la paie et charges sociales",
+          "Techniques d'entretien et processus de sélection",
+          "Communication interne : journal d'entreprise, intranet, affichage",
+          "Logiciels spécialisés RH (Sage Paie & RH)",
+          "Statistiques sociales et bilans sociaux",
+          "Relations avec les délégués du personnel et syndicats"
+        ]
+      },
+      {
+        "semester": "Semestre 3 — Développement RH & Communication de Crise",
+        "modules": [
+          "Gestion Prévisionnelle des Emplois et des Compétences (GPEC)",
+          "Plan et ingénierie de la formation continue",
+          "Communication externe, relations presse et événements internes",
+          "Communication de crise et gestion des conflits",
+          "Audit social et amélioration des conditions de travail",
+          "Projet d'étude RH appliqué"
+        ]
+      },
+      {
+        "semester": "Semestre 4 — Professionnalisation & Stage Pratique",
+        "modules": [
+          "Stratégie de marque employeur et réseaux sociaux RH",
+          "Stage en direction des ressources humaines (8 à 12 semaines)",
+          "Élaboration du mémoire de fin de formation",
+          "Soutenance officielle devant jury"
+        ]
+      }
+    ],
+    "opportunities": [
+      "Assistant(e) Ressources Humaines",
+      "Chargé(e) de recrutement junior",
+      "Assistant(e) administratif(ve) du personnel",
+      "Chargé(e) de communication interne",
+      "Assistant(e) relations presse et communication",
+      "Gestionnaire de paie et formation junior"
+    ],
+    "admissionRequirements": [
+      "Baccalauréat toutes séries (A, B, C, D, G1, G2 ou équivalent)",
+      "Bon niveau d'expression orale et rédactionnelle",
+      "Entretien d'évaluation des motivations"
+    ],
+    "published": true,
+    "order": 6
+  },
+  {
+    "id": "ad",
+    "code": "AD",
+    "name": "Assistanat de Direction",
+    "category": "Administration & Management",
+    "shortDescription": "Devenez le collaborateur stratégique et le pilier organisationnel des dirigeants.",
+    "description": "La filière AD prépare les étudiants à devenir des collaborateurs de premier plan auprès de cadres dirigeants et directeurs généraux, maîtrisant l'organisation d'agendas complexes, la rédaction d'actes, la gestion documentaire et les réunions de haut niveau.",
+    "level": "BAC+2 (BTS d'État) / Préparation Licence Pro",
+    "duration": "2 ans (4 semestres)",
+    "image": "https://images.unsplash.com/photo-1573497491765-dccce02b29df?auto=format&fit=crop&w=1200&q=80",
+    "objectives": [
+      "Assurer l'organisation logistique et le secrétariat de directions générales",
+      "Rédiger des correspondances administratives, comptes rendus et procès-verbaux",
+      "Gérer les flux d'informations confidentielles et les agendas de dirigeants",
+      "Maîtriser les logiciels bureautiques avancés et les outils collaboratifs"
+    ],
+    "skills": [
+      "Gestion administrative de haut niveau",
+      "Secrétariat de direction générale",
+      "Organisation d'événements et réunions",
+      "Gestion d'agenda et déplacements",
+      "Gestion documentaire et archivage numérique",
+      "Communication institutionnelle & discrétion",
+      "Accueil protocolaire de délégations",
+      "Rédaction administrative experte",
+      "Outils bureautiques avancés (Pack Office 365)"
+    ],
+    "program": [
+      {
+        "semester": "Semestre 1 — Organisation & Outils Bureautiques",
+        "modules": [
+          "Techniques de rédaction administrative et commerciale",
+          "Bureautique avancée : Word (mise en page pro) & Excel",
+          "Organisation matérielle et gestion du temps",
+          "Droit civil, du travail et des affaires",
+          "Communication interpersonnelle et protocole d'accueil",
+          "Anglais professionnel pour assistants"
+        ]
+      },
+      {
+        "semester": "Semestre 2 — Gestion Documentaire & Réunions",
+        "modules": [
+          "Préparation, tenue et rédaction de PV de réunions",
+          "Classement, archivage physique et électronique (GED)",
+          "Présentations professionnelles assistées par ordinateur (PowerPoint)",
+          "Comptabilité simplifiée et gestion des frais généraux",
+          "Sténographie et prise de notes rapide",
+          "Deuxième langue étrangère"
+        ]
+      },
+      {
+        "semester": "Semestre 3 — Collaboration Stratégique & Relations Publiques",
+        "modules": [
+          "Organisation de missions, voyages et déplacements de délégations",
+          "Relations publiques et communication protocolaire",
+          "Outils collaboratifs modernes (Teams, Google Workspace, CRM)",
+          "Gestion des situations d'urgence et confidentialité",
+          "Dossiers administratifs et gestion de projets transverses",
+          "Projet pratique de simulation de direction"
+        ]
+      },
+      {
+        "semester": "Semestre 4 — Stage & Examen d'Assistanat",
+        "modules": [
+          "Déontologie du métier et posture managériale",
+          "Stage pratique en entreprise ou institution (8 à 12 semaines)",
+          "Rédaction du rapport de stage d'assistanat",
+          "Soutenance orale"
+        ]
+      }
+    ],
+    "opportunities": [
+      "Assistant(e) de direction générale",
+      "Secrétaire de direction bilingue",
+      "Assistant(e) administratif(ve) et juridique",
+      "Office Manager junior",
+      "Chargé(e) de secrétariat général",
+      "Assistant(e) de gestion de projets"
+    ],
+    "admissionRequirements": [
+      "Baccalauréat séries A, B, D, G1 ou équivalent",
+      "Excellente maîtrise du français écrit et oral",
+      "Sens aigu de l'organisation et de la rigueur"
+    ],
+    "published": true,
+    "order": 7
+  },
+  {
+    "id": "rit",
+    "code": "RIT",
+    "name": "Réseau Informatique et Télécommunications",
+    "category": "Réseaux & Télécommunications",
+    "shortDescription": "Déployez, administrez et sécurisez les infrastructures réseaux et télécoms de pointe.",
+    "description": "La filière RIT forme les spécialistes de l'installation, de la configuration, de l'administration, de la supervision et de la sécurité des infrastructures réseaux d'entreprises et des systèmes de télécommunication modernes.",
+    "level": "BAC+2 (BTS d'État) / Préparation Licence Pro",
+    "duration": "2 ans (4 semestres)",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "objectives": [
+      "Configurer et interconnecter des équipements réseaux (routeurs, commutateurs, pare-feu)",
+      "Administrer des systèmes d'exploitation serveurs (Linux, Windows Server)",
+      "Déployer des services réseaux fondamentaux (DNS, DHCP, VPN, Web, Mail)",
+      "Sécuriser les architectures réseaux contre les intrusions et vulnérabilités"
+    ],
+    "skills": [
+      "Réseaux informatiques & Modèle OSI",
+      "Protocoles TCP/IP & Adressage IPv4/IPv6",
+      "Routage & Commutation (Cisco / MikroTik)",
+      "Administration systèmes Linux & Windows Server",
+      "Télécommunications & Fibre optique",
+      "Sécurité informatique & Pare-feu",
+      "Maintenance des équipements matériels",
+      "Virtualisation & Cloud Computing",
+      "Supervision réseau (Nagios / Zabbix)"
+    ],
+    "program": [
+      {
+        "semester": "Semestre 1 — Fondements Réseaux & Systèmes",
+        "modules": [
+          "Architecture des ordinateurs et maintenance préventive",
+          "Notions fondamentales de réseaux (Modèles OSI et TCP/IP)",
+          "Systèmes d'exploitation de base : Linux (Ubuntu/Debian) et Windows",
+          "Électronique et physique des signaux de télécommunication",
+          "Mathématiques pour l'ingénierie réseau",
+          "Anglais technique informatique"
+        ]
+      },
+      {
+        "semester": "Semestre 2 — Routage, Commutation & Services",
+        "modules": [
+          "Configuration des commutateurs (VLANs, Trunking, Spanning Tree)",
+          "Routage statique et dynamique (RIP, OSPF)",
+          "Services réseaux fondamentaux : DHCP, DNS, NAT, SSH",
+          "Supports de transmission : câblage RJ45 et fibre optique",
+          "Téléphonie sur IP (VoIP) et standards de télécoms mobiles",
+          "Ateliers pratiques en laboratoire réseau"
+        ]
+      },
+      {
+        "semester": "Semestre 3 — Administration Serveurs & Sécurité",
+        "modules": [
+          "Administration avancée Linux (Apache, Nginx, BIND, iptables)",
+          "Windows Server : Active Directory, stratégies de groupe (GPO)",
+          "Sécurité périmétrique, VPN et pare-feu (Firewalling)",
+          "Virtualisation de serveurs (VMware, VirtualBox, Proxmox)",
+          "Supervision réseau et gestion des incidents",
+          "Projet d'architecture réseau d'entreprise"
+        ]
+      },
+      {
+        "semester": "Semestre 4 — Professionnalisation Réseau & Télécoms",
+        "modules": [
+          "Initiation aux technologies sans fil et réseaux 4G/5G",
+          "Stage pratique en entreprise de télécoms ou DSI (8 à 12 semaines)",
+          "Élaboration du rapport de stage technique",
+          "Soutenance devant jury d'experts"
+        ]
+      }
+    ],
+    "opportunities": [
+      "Administrateur réseau et systèmes junior",
+      "Technicien supérieur réseaux & télécoms",
+      "Technicien d'infrastructure et câblage",
+      "Technicien support niveau 2 en DSI",
+      "Assistant ingénieur cybersécurité",
+      "Déployeur de solutions de télécommunication"
+    ],
+    "admissionRequirements": [
+      "Baccalauréat séries C, D, E, F2, F3 ou équivalent scientifique/technique",
+      "Appétence pour le matériel, les architectures informatiques et la logique",
+      "Dossier scolaire et entretien technique"
+    ],
+    "published": true,
+    "order": 8
+  }
+]

@@ -1,21 +1,400 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ISATech - Institut des Sciences Appliquées et de la Technologie</title>
-    <meta name="description" content="Plateforme officielle d'ISATech, Institut des Sciences Appliquées et de la Technologie à Abidjan, Koumassi : formations, filières, admissions et vie scolaire." />
-    <meta property="og:title" content="ISATech - Institut des Sciences Appliquées et de la Technologie" />
-    <meta property="og:description" content="Plateforme officielle d'ISATech, Institut des Sciences Appliquées et de la Technologie à Abidjan, Koumassi : formations, filières, admissions et vie scolaire." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-[#F8FAFC] text-[#1E293B] antialiased selection:bg-[#002D62] selection:text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISATech — Institut des Sciences Appliquées et de la Technologie | Abidjan-Koumassi</title>
+  <meta name="description" content="ISATech, établissement d'enseignement supérieur à Abidjan-Koumassi depuis 2001 : BTS d'État en informatique, réseaux, finance, commerce, communication, tourisme, RH et assistanat de direction.">
+  <meta property="og:title" content="ISATech — L'excellence demeure notre credo">
+  <meta property="og:description" content="Établissement d'enseignement supérieur à Abidjan-Koumassi depuis 2001. 8 filières BTS d'État.">
+  <meta property="og:image" content="assets/images/promo-tenue.jpg">
+  <link rel="icon" href="assets/images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="banner"></div>
+  <div id="header" style="height:72px"></div>
 
+  <main id="main" tabindex="-1">
+    <!-- ============ HOME ============ -->
+    <div class="view" data-view="home">
+      <section class="hero">
+        <div class="container">
+          <div>
+            <span class="eyebrow">Institut des Sciences Appliquées et de la Technologie</span>
+            <h1 id="hero-title">Construisez les compétences qui façonnent votre <em>avenir</em>.</h1>
+            <p class="lead" id="hero-subtitle">Établissement d'enseignement supérieur à Abidjan-Koumassi, agréé par l'État.</p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#/formations">Découvrir nos formations</a>
+              <a class="btn btn-ghost-light when-admission" href="#/admission">Inscriptions <span data-s="admissionYear">2026-2027</span></a>
+            </div>
+            <div class="hero-motto"><b>✦</b> « <span data-s="slogan">L'excellence demeure notre credo</span> »</div>
+          </div>
+          <div class="hero-visual">
+            <img id="hero-image" src="assets/images/promo-tenue.jpg" alt="Étudiants d'ISATech en tenue officielle" width="600" height="510">
+            <div class="hero-badge"><strong data-s="foundedYear">2001</strong><span>Depuis plus<br>de 20 ans</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat"><strong data-s="foundedYear">2001</strong><span>Année de création</span></div>
+            <div class="stat"><strong id="stat-formations">8</strong><span>Filières BTS d'État</span></div>
+            <div class="stat"><strong data-s="graduates">2000+</strong><span>Diplômés formés</span></div>
+            <div class="stat"><strong>100%</strong><span>Formation pratique</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="reveal">
+            <span class="eyebrow">Présentation</span>
+            <h2>Plus qu'une formation, un parcours vers l'emploi.</h2>
+            <p>Créé le <strong data-s="foundedDate">06 septembre 2001</strong> à Abidjan, dans la commune de Koumassi, l'Institut des Sciences Appliquées et de la Technologie forme les techniciens supérieurs et cadres de demain.</p>
+            <p>Discipline, tenue réglementaire, encadrement de proximité et pratique professionnelle : nos étudiants sont préparés aux exigences réelles des entreprises.</p>
+            <ul class="feature-list">
+              <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><div><strong>Agréé par l'État</strong><small>Habilité par le FDFP, BTS d'État</small></div></li>
+              <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span><div><strong>Encadrement proche</strong><small>Suivi individuel des étudiants</small></div></li>
+              <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg></span><div><strong>Salles équipées</strong><small>Informatique et réseaux</small></div></li>
+              <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></span><div><strong>Stages en entreprise</strong><small>Insertion professionnelle</small></div></li>
+            </ul>
+            <a class="btn btn-outline" href="#/a-propos">Découvrir l'établissement</a>
+          </div>
+          <img class="rounded-img reveal" src="assets/images/classe-1.jpg" alt="Étudiants d'ISATech en salle de cours" loading="lazy" style="aspect-ratio:4/3">
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Nos formations</span>
+              <h2>Des filières tournées vers l'emploi</h2>
+              <p>Brevet de Technicien Supérieur d'État en 2 ans, avec stage en entreprise.</p>
+            </div>
+            <a class="btn btn-outline" href="#/formations">Toutes les filières</a>
+          </div>
+          <div class="grid grid-4" id="home-formations">
+            <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Vie de l'école</span>
+              <h2>Actualités & informations</h2>
+            </div>
+            <a class="btn btn-outline" href="#/actualites">Toutes les actualités</a>
+          </div>
+          <div class="info-list info-cols" id="home-infos" style="margin-bottom:28px"></div>
+          <div class="grid grid-3" id="home-news"></div>
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Galerie</span>
+              <h2>ISATech en images</h2>
+              <p>Le quotidien de nos étudiants : cours, tenue officielle, cérémonies et vie de l'école.</p>
+            </div>
+            <a class="btn btn-outline" href="#/galerie">Voir la galerie</a>
+          </div>
+          <div class="gallery" id="home-gallery"></div>
+        </div>
+      </section>
+
+      <section class="section when-admission">
+        <div class="container">
+          <div class="cta">
+            <div>
+              <h2>Inscriptions <span data-s="admissionYear">2026-2027</span> ouvertes</h2>
+              <p>Rejoignez plus de <span data-s="graduates">2000+</span> diplômés. Le secrétariat vous accueille à Koumassi.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-gold" href="#/admission">Comment s'inscrire</a>
+              <a class="btn btn-ghost-light" href="#/contact">Nous contacter</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <div class="view" data-view="about" hidden>
+      <section class="page-header">
+        <div class="container">
+          <span class="eyebrow">L'établissement</span>
+          <h1>Notre histoire &amp; notre mission</h1>
+          <p>Institut des Sciences Appliquées et de la Technologie — fondé le <span data-s="foundedDate">06 septembre 2001</span> à Abidjan-Koumassi.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="reveal">
+            <span class="eyebrow">Depuis <span data-s="foundedYear">2001</span></span>
+            <h2>Deux décennies au service de la jeunesse ivoirienne.</h2>
+            <p>Créé le <strong data-s="foundedDate">06 septembre 2001</strong> au cœur de Koumassi, ISATech est né de la volonté de son Fondateur de donner aux jeunes une formation supérieure solide, axée sur l'application concrète des sciences, de la gestion et des technologies.</p>
+            <p>Établissement agréé par l'État et habilité par le FDFP, l'école a formé <strong data-s="graduates">2000+</strong> diplômés aujourd'hui en activité dans les entreprises, cabinets, sociétés de télécoms et administrations de Côte d'Ivoire.</p>
+            <div class="stats-grid" style="box-shadow:none;margin-top:24px">
+              <div class="stat"><strong data-s="foundedYear">2001</strong><span>Création</span></div>
+              <div class="stat"><strong id="stat-formations-about">8</strong><span>Filières</span></div>
+              <div class="stat"><strong data-s="graduates">2000+</strong><span>Diplômés</span></div>
+              <div class="stat"><strong>BTS</strong><span>Diplôme d'État</span></div>
+            </div>
+          </div>
+          <img class="rounded-img reveal" src="assets/images/batiment-entree.webp" alt="Le bâtiment d'ISATech à Koumassi" loading="lazy" style="aspect-ratio:4/3">
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="container grid grid-2">
+          <div class="panel reveal">
+            <span class="eyebrow">Notre vision</span>
+            <h3>Une référence de l'enseignement supérieur appliqué</h3>
+            <p style="color:var(--muted);margin:0">Former des diplômés directement opérationnels, éthiques et méthodiques, moteurs des transformations technologiques et managériales de leurs entreprises.</p>
+          </div>
+          <div class="panel reveal">
+            <span class="eyebrow">Notre mission</span>
+            <h3>Former, encadrer, insérer</h3>
+            <p style="color:var(--muted);margin:0">Offrir une formation rigoureuse alliant savoirs fondamentaux, pratique professionnelle et savoir-être, pour une insertion rapide sur le marché de l'emploi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><div><span class="eyebrow">Nos valeurs</span><h2>Ce qui nous définit</h2></div></div>
+          <div class="grid grid-3">
+            <div class="value reveal"><div class="ico">★</div><h3>Excellence</h3><p>Exigence de qualité pédagogique et de rigueur intellectuelle dans tous nos enseignements.</p></div>
+            <div class="value reveal"><div class="ico">◆</div><h3>Discipline</h3><p>Assiduité, ponctualité, tenue réglementaire et respect des règles de vie commune.</p></div>
+            <div class="value reveal"><div class="ico">✦</div><h3>Innovation</h3><p>Des programmes adaptés aux évolutions des technologies et aux besoins des entreprises.</p></div>
+            <div class="value reveal"><div class="ico">●</div><h3>Professionnalisme</h3><p>Une posture professionnelle dès le premier jour : expression, rigueur et esprit d'équipe.</p></div>
+            <div class="value reveal"><div class="ico">▲</div><h3>Responsabilité</h3><p>L'engagement de nos étudiants au service du développement de la Côte d'Ivoire.</p></div>
+            <div class="value reveal"><div class="ico">■</div><h3>Intégrité</h3><p>Honnêteté, transparence et respect mutuel entre étudiants et enseignants.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="container">
+          <div class="section-head"><div><span class="eyebrow">Organisation</span><h2>Organigramme</h2><p>Du Fondateur au corps enseignant, une équipe au service de la réussite des étudiants.</p></div></div>
+          <div class="org">
+            <div class="org-level"><div class="org-node top"><img src="assets/images/fondateur.jpg" alt="Le Fondateur d'ISATech" loading="lazy"><strong>Le Fondateur</strong><small>Président du Conseil</small></div></div>
+            <div class="org-level"><div class="org-node"><strong>Direction Générale</strong><small>Pilotage et développement de l'établissement</small></div></div>
+            <div class="org-level"><div class="org-node"><strong>Direction des Études</strong><small>Programmes, examens et suivi pédagogique</small></div></div>
+            <div class="org-level">
+              <div class="org-node"><strong>Pôle Technologies</strong><small>IDA · RIT</small></div>
+              <div class="org-node"><strong>Pôle Tertiaire</strong><small>FCGE · GEC · RHCOM · AD · CV · TH</small></div>
+              <div class="org-node"><strong>Secrétariat &amp; Accueil</strong><small>Inscriptions et vie administrative</small></div>
+            </div>
+            <div class="org-level"><div class="org-node"><strong>Corps enseignant</strong><small>Formateurs et professionnels du secteur</small></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ FORMATIONS ============ -->
+    <div class="view" data-view="formations" hidden>
+      <section class="page-header">
+        <div class="container">
+          <span class="eyebrow">Formations</span>
+          <h1>Nos filières BTS d'État</h1>
+          <p>Des formations de 2 ans en 4 semestres, mêlant cours, travaux pratiques et stage en entreprise.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="filters" id="formations-filters" aria-label="Filtrer par domaine"></div>
+          <div class="grid grid-3" id="formations-grid">
+            <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ FORMATION ============ -->
+    <div class="view" data-view="formation" hidden>
+        <div id="formation"></div>
+    </div>
+
+    <!-- ============ ADMISSION ============ -->
+    <div class="view" data-view="admission" hidden>
+      <section class="page-header">
+        <div class="container">
+          <span class="eyebrow">Admission <span data-s="admissionYear">2026-2027</span></span>
+          <h1>Votre avenir commence ici.</h1>
+          <p>Étapes d'inscription, pièces à fournir et réponses à vos questions.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div id="admission-status"></div>
+          <div class="section-head"><div><span class="eyebrow">Procédure</span><h2>S'inscrire en 6 étapes</h2></div></div>
+          <div class="steps">
+            <div class="step reveal"><h3>Choisir sa filière</h3><p>Consultez nos formations et choisissez le parcours adapté à votre projet professionnel.</p></div>
+            <div class="step reveal"><h3>Vérifier les conditions</h3><p>Être titulaire du Baccalauréat (séries selon la filière) ou d'un diplôme reconnu équivalent.</p></div>
+            <div class="step reveal"><h3>Préparer son dossier</h3><p>Rassemblez les pièces listées ci-dessous.</p></div>
+            <div class="step reveal"><h3>Déposer le dossier</h3><p>Présentez-vous au secrétariat d'ISATech à Koumassi avec votre dossier complet.</p></div>
+            <div class="step reveal"><h3>Entretien d'orientation</h3><p>Un échange avec l'équipe pédagogique pour valider votre choix de filière.</p></div>
+            <div class="step reveal"><h3>Finaliser l'inscription</h3><p>Réglez les frais d'inscription et recevez la confirmation de votre admission.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="container split" style="align-items:start">
+          <div class="panel">
+            <h2>Pièces à fournir</h2>
+            <ul class="check-list">
+              <li>Copie de la pièce d'identité (CNI, passeport ou attestation d'identité)</li>
+              <li>Copie légalisée de l'attestation de réussite ou du diplôme du Baccalauréat</li>
+              <li>Copie du relevé de notes du Baccalauréat</li>
+              <li>Deux photos d'identité récentes (fond blanc)</li>
+              <li>Extrait d'acte de naissance ou jugement supplétif</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h2>Nos filières</h2>
+            <ul class="check-list" id="admission-formations"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container" style="max-width:860px">
+          <div class="section-head"><div><span class="eyebrow">FAQ</span><h2>Questions fréquentes</h2></div></div>
+          <details class="acc" open><summary>Quel diplôme prépare ISATech ?</summary><div class="acc-body">Le Brevet de Technicien Supérieur (BTS) d'État ivoirien, avec possibilité de poursuite vers une Licence professionnelle.</div></details>
+          <details class="acc"><summary>Les étudiants étrangers sont-ils acceptés ?</summary><div class="acc-body">Oui. Les diplômes équivalents au Baccalauréat sont acceptés après vérification.</div></details>
+          <details class="acc"><summary>Peut-on s'inscrire avant les résultats du Bac ?</summary><div class="acc-body">Oui, les élèves de Terminale peuvent pré-déposer leur dossier. L'admission devient définitive à l'obtention du Baccalauréat.</div></details>
+          <details class="acc"><summary>Comment se règlent les frais de scolarité ?</summary><div class="acc-body">Les montants et l'échelonnement des paiements sont communiqués par le secrétariat lors de l'inscription.</div></details>
+          <details class="acc"><summary>La tenue est-elle obligatoire ?</summary><div class="acc-body">Oui. La tenue officielle ISATech (costume ou tailleur, chemise blanche, cravate) est exigée tous les jours de cours.</div></details>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container">
+          <div class="cta">
+            <div><h2>Une question sur votre inscription ?</h2><p>Le secrétariat vous répond — <span data-s="hours">Lundi au vendredi : 07h30 - 17h30</span>.</p></div>
+            <div class="cta-actions"><a class="btn btn-gold" href="#/contact">Nous contacter</a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ NEWS ============ -->
+    <div class="view" data-view="news" hidden>
+      <section class="page-header">
+        <div class="container">
+          <span class="eyebrow">Vie de l'école</span>
+          <h1>Actualités &amp; informations</h1>
+          <p>Communiqués, informations pratiques et nouvelles de l'établissement.</p>
+        </div>
+      </section>
+      <section class="section-sm section-white" id="infos">
+        <div class="container" style="max-width:900px">
+          <h2>Infos &amp; communiqués</h2>
+          <div class="info-list" id="infos-list"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2>Actualités scolaires</h2>
+          <div class="filters" id="news-filters" aria-label="Filtrer par catégorie"></div>
+          <div class="grid grid-3" id="news-grid"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ ARTICLE ============ -->
+    <div class="view" data-view="article" hidden>
+        <div id="article"></div>
+    </div>
+
+    <!-- ============ GALLERY ============ -->
+    <div class="view" data-view="gallery" hidden>
+      <section class="page-header">
+        <div class="container">
+          <span class="eyebrow">Galerie</span>
+          <h1>ISATech en images</h1>
+          <p>Cours, tenue officielle, locaux, cérémonies et activités : découvrez le quotidien de l'école.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="filters" id="gallery-filters" aria-label="Filtrer par catégorie"></div>
+          <div class="gallery" id="gallery-grid"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ CONTACT ============ -->
+    <div class="view" data-view="contact" hidden>
+      <section class="page-header">
+        <div class="container">
+          <span class="eyebrow">Contact</span>
+          <h1>Parlons de votre projet</h1>
+          <p>Notre équipe vous accueille et vous oriente du lundi au vendredi à Koumassi.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container split" style="align-items:start">
+          <div class="contact-card">
+            <h2>Nos coordonnées</h2>
+            <div class="contact-line"><span class="ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><strong>Adresse</strong><span id="c-address"></span></div></div>
+            <div class="contact-line"><span class="ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><strong>Téléphone</strong><span id="c-phones"></span></div></div>
+            <div class="contact-line"><span class="ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><div><strong>Email</strong><span id="c-email"></span></div></div>
+            <div class="contact-line"><span class="ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><div><strong>Horaires</strong><span id="c-hours"></span></div></div>
+          </div>
+          <div class="panel">
+            <h2>Écrivez-nous</h2>
+            <form class="form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="field"><label for="f-name">Nom complet *</label><input id="f-name" name="name" required autocomplete="name"></div>
+                <div class="field"><label for="f-phone">Téléphone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+225 07 00 00 00 00"></div>
+              </div>
+              <div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+              <div class="field"><label for="f-subject">Objet</label><input id="f-subject" name="subject" placeholder="Ex : Inscription en IDA"></div>
+              <div class="field"><label for="f-message">Message *</label><textarea id="f-message" name="message" required></textarea></div>
+              <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <div id="contact-status" aria-live="polite"></div>
+              <button class="btn btn-primary" type="submit">Envoyer le message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="section-sm">
+        <div class="container">
+          <iframe class="map" id="c-map" title="Plan d'accès ISATech" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ 404 ============ -->
+    <div class="view" data-view="notfound" hidden>
+      <section class="section" style="text-align:center">
+        <div class="container">
+          <h1>Page introuvable</h1>
+          <p>La page demandée n'existe pas ou a été déplacée.</p>
+          <a class="btn btn-primary" href="#/">Retour à l'accueil</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
